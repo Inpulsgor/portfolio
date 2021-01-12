@@ -6,7 +6,7 @@
   background-image: url('../../assets/main-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 0;
+  background-position: center;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -19,7 +19,28 @@
     top: 0;
     left: 0;
     z-index: 1;
-    background: #000;
-    opacity: 0.4;
+    background: rgba(0, 0, 0, 0.5);
+    // opacity: 0.4;
   }
+
+  &__container {
+    z-index: 5;
+    text-align: center;
+    width: 100%;
+    color: $white-color;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 200;
+    width: 100%;
+  }
+
+  &__headline {
+    font-size: 70px;
+  }
+}
+
+.typewriter {
+  color: $orange-color;
 }
