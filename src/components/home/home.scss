@@ -1,6 +1,10 @@
 @import '../../scss/variables';
 @import '../../scss/mixins';
 
+/* ----------------------------------------------------------------
+Home
+-----------------------------------------------------------------*/
+
 .home {
   position: relative;
   background-image: url('../../assets/main-bg.jpg');
@@ -20,7 +24,6 @@
     left: 0;
     z-index: 1;
     background: rgba(0, 0, 0, 0.5);
-    // opacity: 0.4;
   }
 
   &__container {
@@ -43,4 +46,56 @@
 
 .typewriter {
   color: $orange-color;
+}
+
+.arrow {
+  position: absolute;
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+  bottom: 5vh;
+  z-index: 10;
+  color: $white-color;
+
+  &__link {
+    display: block;
+    background-color: transparent;
+  }
+
+  &__icon {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+
+    background-image: url('../../assets/arrow-down.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      z-index: -1;
+      transition: background ease-in-out 0.2s;
+    }
+
+    &:hover {
+      transform: scale(1.5);
+      transition: ease-in-out 0.3s;
+
+      &::after {
+        opacity: 0;
+        transform: scale(1.2);
+        transition: opacity ease-in-out 0.3s;
+      }
+    }
+  }
 }

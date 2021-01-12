@@ -1,6 +1,10 @@
 @import '../../scss/variables';
 @import '../../scss/mixins';
 
+/* ----------------------------------------------------------------
+Header
+-----------------------------------------------------------------*/
+
 .header {
   position: absolute;
   left: 0;
@@ -40,7 +44,7 @@
   &__link {
     display: block;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.5px;
     color: #eee;
     padding: 0 5px;
