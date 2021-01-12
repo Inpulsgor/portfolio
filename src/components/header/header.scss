@@ -1,20 +1,59 @@
+@import '../../scss/variables';
 @import '../../scss/mixins';
 
 .header {
   position: absolute;
   left: 0;
   top: 0;
+  padding: 10px 16px;
   width: 100%;
   background: transparent;
   z-index: 2;
 
   &__container {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   &__logo {
     font-size: 20px;
+    font-weight: 700;
     padding: 15px 0;
+    color: $white-color;
+  }
+}
+
+.nav {
+  font-family: 'Open Sans', sans-serif;
+
+  &__list {
+    display: flex;
+    padding-top: 5px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 14px;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #eee;
+    padding: 0 5px;
+    transition: color 0.5s;
+
+    &.active {
+      color: #c49b66;
+    }
+
+    &:hover {
+      transition: color 0.5s;
+      color: #c49b66;
+    }
   }
 }
