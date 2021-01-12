@@ -1,0 +1,20 @@
+@import '../../scss/mixins';
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 2;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 20px;
+    padding: 15px 0;
+  }
+}

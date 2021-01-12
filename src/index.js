@@ -1,10 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./components/app/App";
+import './services/helpers'
+import './scss/main.scss';
 
-import "./services/normalize.css";
-import "./services/fonts.css";
-import "./services/variables.css";
-import "./index.css";
-
-ReactDOM.render(<App />, document.getElementById("root"));
+import './components/header/header';
+import './components/section/section';
+import './components/footer/footer';
