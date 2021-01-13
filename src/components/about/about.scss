@@ -98,7 +98,7 @@ About
   }
 
   &__description {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $open-sans-font;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.6;
@@ -110,6 +110,10 @@ About
   &__list {
     margin-bottom: 30px;
   }
+
+  &__control {
+    display: flex;
+  }
 }
 
 .social {
@@ -117,7 +121,7 @@ About
   flex-wrap: wrap;
 
   &__item {
-    padding: 15px 0;
+    padding: 5px 0;
 
     &:not(:last-child) {
       margin-right: 12px;
@@ -135,6 +139,7 @@ About
     border: 1px solid #eee;
     border-radius: 50%;
     transition: all 0.3s linear;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 
     &:hover {
       background: $orange-color;
@@ -148,7 +153,75 @@ About
   }
 
   &__icon {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.control {
+  &__link {
+    display: block;
+    font-family: $open-sans-font;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5px;
+    width: 130px;
+    height: 40px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+
+    &_hire {
+      color: $white-color;
+      background-color: $orange-color;
+      margin-right: 5px;
+    }
+
+    &_download {
+      position: relative;
+      transform-style: preserve-3d;
+      transition: 0.3s;
+      color: $orange-color;
+
+      &:before {
+        content: attr(back);
+        font-size: 18px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid $orange-color;
+        background-color: $orange-color;
+        color: $white-color;
+        line-height: 38px;
+        transition: 0.3s;
+        transform-origin: bottom;
+        transform: translateY(-100%) rotateX(90deg);
+      }
+
+      &:after {
+        content: attr(front);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid $orange-color;
+        color: $orange-color;
+        transition: 0.3s;
+        transform-origin: top;
+        transform: translateY(0) rotateX(0deg);
+      }
+
+      &:hover::before {
+        transform: translateY(0) rotateX(0deg);
+      }
+
+      &:hover::after {
+        transform: translateY(100%) rotateX(90deg);
+      }
+    }
   }
 }
