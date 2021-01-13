@@ -1,0 +1,69 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+.abilities {
+  position: relative;
+  background-color: #333;
+  background-image: url('../../assets/desk.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 15;
+    color: #fff;
+  }
+
+  &__education {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  &__experience {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  &__skills {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.education {
+  &__title {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+
+    &::before {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    &::after {
+      left: 0;
+      width: 55%;
+    }
+  }
+}
+
+.experience {
+}
+
+.skills {
+}

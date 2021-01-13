@@ -7,4 +7,5 @@ import './services/animatedheadline/animatedheadline';
 import './components/header/header';
 import './components/home/home';
 import './components/about/about';
+import './components/abilities/abilities';
 import './components/footer/footer';

@@ -1,3 +1,5 @@
+@import './variables';
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -126,4 +128,32 @@ input:focus:valid {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.title {
+  display: inline-block;
+  font-size: 36px;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 2;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    bottom: 0;
+    background: $orange-color;
+    left: calc(50% - 30px);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: rgba(1, 1, 1, 0.05);
+  }
 }
