@@ -6,5 +6,5 @@ import './services/animatedheadline/animatedheadline';
 
 import './components/header/header';
 import './components/home/home';
-import './components/section/section';
+import './components/about/about';
 import './components/footer/footer';
