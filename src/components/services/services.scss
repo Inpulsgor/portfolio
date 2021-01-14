@@ -1,2 +1,11 @@
 @import '../../scss/variables';
 @import '../../scss/mixins';
+
+.services {
+  padding: 100px 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 80px;
+  }
+}
