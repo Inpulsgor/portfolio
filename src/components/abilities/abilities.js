@@ -1,2 +1,2 @@
-import moduleName from '../../services/refs';
+import refs from '../../services/refs';
 import './abilities.scss';

@@ -52,6 +52,7 @@
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
-    "core-js": "^3.6.5"
+    "core-js": "^3.6.5",
+    "jquery.stellar": "^0.6.2"
   }
 }

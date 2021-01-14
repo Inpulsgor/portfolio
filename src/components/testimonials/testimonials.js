@@ -1,2 +1,2 @@
 import refs from '../../services/refs';
-import './footer';
+import './testimonials.scss';
