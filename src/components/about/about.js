@@ -6,10 +6,10 @@ const aboutMarkup = aboutRef => {
         <div class="about__container container">
 
           <div class="about__photo photo">
-            <div class="photo__container">
-              <picture>
+            <div class="photo__wrapper">
+              <div class="photo__container">
                 <img class="photo__image" src=${require('../../assets/profile.jpg')} alt="profile image">
-              </picture>
+              </div>
             </div>
           </div>
 
