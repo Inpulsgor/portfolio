@@ -132,3 +132,126 @@
     }
   }
 }
+
+.bar {
+  position: relative;
+  z-index: 5;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    margin-bottom: 6px;
+  }
+
+  &__text {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    z-index: 5;
+    color: $white-color;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+
+  &__progress {
+    position: relative;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: rgba(240, 240, 240, 0.1);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+
+    &_inner {
+      position: absolute;
+      z-index: 5;
+      width: 80%;
+      height: 100%;
+      border-radius: 10px;
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+      background: $orange-color;
+
+      &::before {
+        position: absolute;
+        content: '';
+        right: 0;
+        top: -10px;
+        height: 0;
+        width: 0;
+        border: 7px solid transparent;
+        border-bottom-width: 0px;
+        border-right-width: 0px;
+        opacity: 0;
+        animation: showText2 0.5s 1.5s linear forwards;
+      }
+      &::after {
+        position: absolute;
+        font-size: 12px;
+        font-weight: 400;
+        right: 0;
+        top: -26px;
+        padding: 2px 8px;
+        border-radius: 3px;
+        color: #fff;
+        opacity: 0;
+        animation: showText2 0.5s 1.5s linear forwards;
+      }
+    }
+  }
+}
+
+.markup {
+  width: 65%;
+
+  &::after {
+    content: '65%';
+  }
+}
+
+.js {
+  width: 53%;
+
+  &::after {
+    content: '53%';
+  }
+}
+
+.react {
+  width: 45%;
+
+  &::after {
+    content: '45%';
+  }
+}
+
+.ts {
+  width: 40%;
+
+  &::after {
+    content: '40%';
+  }
+}
+
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  100% {
+    transform: scale(1);
+  }
+}
