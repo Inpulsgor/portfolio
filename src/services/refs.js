@@ -5,4 +5,6 @@ export default {
   abilities: document.querySelector('.js-abilities'),
   services: document.querySelector('.js-services'),
   stats: document.querySelector('.js-stats'),
+  portfolio: document.querySelector('.js-portfolio'),
+  footer: document.querySelector('.js-footer'),
 };

@@ -1,2 +1,12 @@
 @import '../../scss/variables';
 @import '../../scss/mixins';
+
+.portfolio {
+  padding: 100px 0;
+  overflow: hidden;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 80px;
+  }
+}

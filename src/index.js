@@ -10,4 +10,5 @@ import './components/about/about';
 import './components/abilities/abilities';
 import './components/services/services';
 import './components/stats/stats';
+import './components/portfolio/portfolio';
 import './components/footer/footer';
