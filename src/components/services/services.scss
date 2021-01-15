@@ -62,17 +62,59 @@
     line-height: 1.2;
     margin-bottom: 15px;
 
-    &::before {
-      position: absolute;
-      content: '';
-      background-image: url('../../assets/icons/skills.svg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 40px;
-      height: 40px;
-      top: 40px;
-      left: 50%;
-      transform: translateX(-50%);
+    &_development,
+    &_responsive,
+    &_code,
+    &_support,
+    &_design,
+    &_branding {
+      &::before {
+        position: absolute;
+        content: '';
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &_development {
+      &::before {
+        background-image: url('../../assets/icons/laptop.svg');
+      }
+    }
+
+    &_responsive {
+      &::before {
+        background-image: url('../../assets/icons/responsive.svg');
+      }
+    }
+
+    &_code {
+      &::before {
+        background-image: url('../../assets/icons/code.svg');
+      }
+    }
+
+    &_support {
+      &::before {
+        background-image: url('../../assets/icons/support.svg');
+      }
+    }
+
+    &_design {
+      &::before {
+        background-image: url('../../assets/icons/skills.svg');
+      }
+    }
+
+    &_branding {
+      &::before {
+        background-image: url('../../assets/icons/skills.svg');
+      }
     }
   }
 
