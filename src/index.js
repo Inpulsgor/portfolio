@@ -9,4 +9,5 @@ import './components/home/home';
 import './components/about/about';
 import './components/abilities/abilities';
 import './components/services/services';
+import './components/stats/stats';
 import './components/footer/footer';

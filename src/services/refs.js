@@ -4,4 +4,5 @@ export default {
   about: document.querySelector('.js-about'),
   abilities: document.querySelector('.js-abilities'),
   services: document.querySelector('.js-services'),
+  stats: document.querySelector('.js-stats'),
 };
