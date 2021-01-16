@@ -7,4 +7,5 @@ export default {
   stats: document.querySelector('.js-stats'),
   portfolio: document.querySelector('.js-portfolio'),
   footer: document.querySelector('.js-footer'),
+  portfolio: document.querySelector('.js-portfolio'),
 };
