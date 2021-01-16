@@ -6,9 +6,11 @@ window.onload = () => {
   const grid = document.querySelector('.grid');
 
   const masonry = new Masonry(grid, {
-    // itemSelector: 'grid-item',
+    itemSelector: '.grid-item',
     gutter: 10,
-    originLeft: false,
-    originTop: false,
+    percentPosition: true,
+    resize: false,
+    // originLeft: false,
+    // originTop: false,
   });
 };
