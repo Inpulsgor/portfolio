@@ -1,0 +1,131 @@
+@import '../vendor/variables';
+@import '../vendor/mixins';
+
+/* ----------------------------------------------------------------
+Services
+-----------------------------------------------------------------*/
+
+.services {
+  padding: 100px 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+.service {
+  position: relative;
+  text-align: center;
+  padding: 110px 15px 40px;
+
+  &:nth-child(2),
+  &:nth-child(5) {
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+  }
+
+  &:nth-child(1),
+  &:nth-child(2),
+  &:nth-child(3) {
+    border-bottom: 1px solid #eee;
+  }
+
+  &:nth-child(2) {
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      bottom: -15px;
+      z-index: 4;
+      background: #fff;
+    }
+
+    &::before {
+      left: -15px;
+    }
+
+    &::after {
+      right: -15px;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 15px;
+
+    &_development,
+    &_responsive,
+    &_code,
+    &_support,
+    &_design,
+    &_branding {
+      &::before {
+        position: absolute;
+        content: '';
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &_development {
+      &::before {
+        background-image: url('../../assets/icons/laptop.svg');
+      }
+    }
+
+    &_responsive {
+      &::before {
+        background-image: url('../../assets/icons/responsive.svg');
+      }
+    }
+
+    &_code {
+      &::before {
+        background-image: url('../../assets/icons/code.svg');
+      }
+    }
+
+    &_support {
+      &::before {
+        background-image: url('../../assets/icons/support.svg');
+      }
+    }
+
+    &_design {
+      &::before {
+        background-image: url('../../assets/icons/skills.svg');
+      }
+    }
+
+    &_branding {
+      &::before {
+        background-image: url('../../assets/icons/skills.svg');
+      }
+    }
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 1.6;
+    word-spacing: 1px;
+    color: #a3a3a3;
+  }
+}

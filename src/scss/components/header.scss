@@ -1,0 +1,62 @@
+@import '../vendor/variables';
+@import '../vendor/mixins';
+
+/* ----------------------------------------------------------------
+Header
+-----------------------------------------------------------------*/
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px 16px;
+  width: 100%;
+  background: transparent;
+  z-index: 2;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 0;
+    color: $white-color;
+  }
+}
+
+.nav {
+  font-family: 'Open Sans', sans-serif;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 14px;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #eee;
+    padding: 0 5px;
+    transition: color 0.5s;
+
+    &.active {
+      color: $orange-color;
+    }
+
+    &:hover {
+      transition: color 0.5s;
+      color: $orange-color;
+    }
+  }
+}
