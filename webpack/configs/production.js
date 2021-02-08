@@ -54,10 +54,5 @@ module.exports = env => ({
       chunkFilename: '[name].[id].[contenthash].css',
     }),
     new OptimizeCssAssetsPlugin({}),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery',
-    }),
   ],
 });

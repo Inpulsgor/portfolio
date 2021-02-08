@@ -11,7 +11,6 @@ Testimonials
   text-align: center;
   background-image: url('../../assets/review.jpg');
   background-repeat: no-repeat;
-  // background-size: cover;
   background-position: 50% -25%;
   background-attachment: fixed;
   height: 400px;
@@ -31,11 +30,44 @@ Testimonials
 
   &__title {
     margin-bottom: 50px;
+    &::before {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+.slide {
+  font-size: 18px;
+  word-spacing: 2px;
+  margin-bottom: 20px;
+
+  &__text {
+    margin-bottom: 15px;
   }
 
-  // &__slider {
-  //   position: relative;
-  //   z-index: 10;
-  //   // color: #bbb;
-  // }
+  &__author {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+
+    &:after {
+      // content: '|';
+      position: absolute;
+      right: 0;
+      bottom: 1px;
+      color: $orange-color;
+    }
+  }
+
+  &__position {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    color: $orange-color;
+  }
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #ffa600a6;
+  transition: background 0.3s linear;
 }

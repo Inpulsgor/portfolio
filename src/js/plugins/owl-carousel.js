@@ -1,9 +1,10 @@
 import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.min.css';
 import 'owl.carousel';
 
 $(document).ready(function () {
-  $('.owl-carousel').owlCarousel({
-    items: 3,
+  $('.js-testimonials .owl-carousel').owlCarousel({
+    items: 1,
     dots: true,
     loop: true,
     margin: 10,
@@ -18,15 +19,15 @@ $(document).ready(function () {
       },
 
       600: {
-        items: 3,
+        items: 1,
       },
 
       1024: {
-        items: 3,
+        items: 1,
       },
 
       1366: {
-        items: 3,
+        items: 1,
       },
     },
   });

@@ -2,7 +2,7 @@ import refs from '../services/refs';
 import '../../scss/components/portfolio.scss';
 // import Masonry from 'masonry-layout';
 
-const aboutMarkup = portfolioRef => {
+const portfolioMarkup = portfolioRef => {
   const template = `
         <div class="portfolio__container container">
         
@@ -101,7 +101,7 @@ const aboutMarkup = portfolioRef => {
 };
 
 if (refs.portfolio) {
-  aboutMarkup(refs.portfolio);
+  portfolioMarkup(refs.portfolio);
 }
 
 // window.onload = () => {
