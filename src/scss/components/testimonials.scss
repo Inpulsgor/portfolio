@@ -12,8 +12,9 @@ Testimonials
   background-image: url('../../assets/review.jpg');
   background-repeat: no-repeat;
   // background-size: cover;
-  background-position: 60% -25%;
+  background-position: 50% -25%;
   background-attachment: fixed;
+  height: 400px;
   color: #fff;
 
   &::before {
@@ -32,8 +33,9 @@ Testimonials
     margin-bottom: 50px;
   }
 
-  &__slider {
-    position: relative;
-    z-index: 1;
-  }
+  // &__slider {
+  //   position: relative;
+  //   z-index: 10;
+  //   // color: #bbb;
+  // }
 }

@@ -124,6 +124,7 @@ Portfolio
       opacity: 0;
       z-index: 5;
       color: #fff;
+      user-select: none;
     }
 
     h6 {
@@ -135,6 +136,7 @@ Portfolio
       transition: all 0.6s;
       opacity: 0;
       z-index: 15;
+      user-select: none;
     }
   }
 

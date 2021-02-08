@@ -5,8 +5,7 @@
 import './services/helpers';
 import './plugins/jquery 3.5.1';
 import './plugins/animatedheadline';
-// import './services/plugins/owl-carousel/owl.carousel.min';
-
+import './plugins/owl-carousel';
 /*
  * Components
  */
