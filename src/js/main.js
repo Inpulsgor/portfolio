@@ -18,4 +18,5 @@ import './components/services';
 import './components/stats';
 import './components/portfolio';
 import './components/testimonials';
+import './components/blog';
 import './components/footer';

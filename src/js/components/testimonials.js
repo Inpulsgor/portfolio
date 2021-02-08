@@ -7,19 +7,19 @@ const testimonialsMarkup = testimonialsRef => {
           <i class="testimonials__icon"></i>
           <h4 class="testimonials__title title">Testimonials</h4>
           <div class="testimonials__slider owl-carousel owl-theme owl-loaded">
-            <div class="slide">
+            <div class="testimonials__slide slide">
               <p class="slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
               <span class="slide__author">Alex Smith</span>
-              <span class="slide__position">EPAM</span>
+              <span class="slide__position">UpWork</span>
             </div>
 
-            <div class="slide">
+            <div class="testimonials__slide slide">
               <p class="slide__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
               <span class="slide__author">Alex Smith</span>
               <span class="slide__position">Luxoft</span>
             </div>
 
-            <div class="slide">
+            <div class="testimonials__slide slide">
               <p class="slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
               <span class="slide__author">Alex Smith</span>
               <span class="slide__position">Envato</span>

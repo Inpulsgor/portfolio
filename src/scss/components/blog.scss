@@ -4,3 +4,21 @@
 /* ----------------------------------------------------------------
 Blog
 -----------------------------------------------------------------*/
+
+.blog {
+  text-align: center;
+  padding: 100px 0;
+
+  &__title {
+    margin-bottom: 80px;
+  }
+
+  &__slider {
+    // padding: 15px 0;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 16px #ccc;
+  margin-bottom: 20px;
+}

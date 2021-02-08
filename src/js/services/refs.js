@@ -9,4 +9,5 @@ export default {
   footer: document.querySelector('.js-footer'),
   portfolio: document.querySelector('.js-portfolio'),
   testimonials: document.querySelector('.js-testimonials'),
+  blog: document.querySelector('.js-blog'),
 };
