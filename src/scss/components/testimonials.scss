@@ -38,6 +38,7 @@ Testimonials
     border-radius: 50%;
     border: 1px solid #fff;
     background: transparent;
+    box-shadow: 0 0 16px (#ccc / 2%);
 
     &::before {
       content: '';

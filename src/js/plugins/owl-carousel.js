@@ -46,8 +46,8 @@ $(document).ready(function () {
     items: 3,
     dots: false,
     loop: true,
-    margin: 40,
-    autoplay: true,
+    margin: 20,
+    autoplay: false,
     autoplayTimeout: 6000,
     smartSpeed: 800,
     autoplayHoverPause: true,
@@ -58,11 +58,11 @@ $(document).ready(function () {
       },
 
       600: {
-        items: 2,
+        items: 1,
       },
 
       1024: {
-        items: 3,
+        items: 2,
       },
 
       1366: {
