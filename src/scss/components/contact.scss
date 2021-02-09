@@ -6,6 +6,7 @@ Contact
 -----------------------------------------------------------------*/
 
 .contact {
+  position: relative;
   padding: 100px 0;
   background-image: url('../../assets/map.jpg');
   background-attachment: fixed;
@@ -13,12 +14,27 @@ Contact
   background-size: cover;
   background-position: center;
 
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    opacity: 0.4;
+    background: #000;
+  }
+
   &__heading {
     margin-bottom: 60px;
+    position: relative;
+    z-index: 10;
   }
 
   &__title {
     z-index: 5;
+    color: #fff;
   }
 
   &__content {
@@ -28,18 +44,64 @@ Contact
 }
 
 .form {
+  position: relative;
+  flex-basis: 58%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  z-index: 10;
+
   &__title {
-    font-weight: normal;
-    text-align: center;
-    margin: 0 0 32px 0;
+    display: block;
+    font-family: $poppins-font;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 26px;
+    color: #f0f0f0;
+  }
+
+  &__group {
+    position: relative;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 32px;
+
+    &:first-of-type {
+      padding-right: 15px;
+    }
+
+    &:nth-of-type(2) {
+      padding-left: 15px;
+
+      .form__label {
+        left: 15px;
+      }
+    }
+
+    &:last-of-type {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 52px;
+    }
   }
 
   &__input {
     font-size: 16px;
     letter-spacing: 1px;
+    padding-bottom: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    background-color: transparent;
+    border-bottom: 1px solid #e0e0e0;
+    color: #9e9e9e;
 
     &:focus {
-      border-bottom: 1px solid #1a73a8;
+      border-bottom: 1px solid $orange-color;
     }
 
     &:focus ~ .form__label,
@@ -50,42 +112,55 @@ Contact
     }
   }
 
-  &__group {
-    position: relative;
-    margin-bottom: 32px;
-    width: 100%;
-    padding-bottom: 10px;
-    border: none;
-    border-bottom: 1px solid #e0e0e0;
-    background-color: transparent;
-    outline: none;
-    transition: 0.3s;
-  }
-
   &__label {
     position: absolute;
     top: 0;
+    left: 0;
     z-index: -1;
     color: #9e9e9e;
     transition: 0.3s;
   }
 
+  &__textarea {
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 10px;
+    resize: vertical;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+    transition: 0.3s;
+    background-color: transparent;
+    border: 1px solid #e0e0e0;
+    color: #9e9e9e;
+
+    &:focus {
+      border: 1px solid $orange-color;
+    }
+  }
+
   &__button {
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    // border-radius: 5px;
     color: #fff;
-    background-color: #0071f0;
     outline: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background-color 0.3s linear;
+    background-color: rgba(255, 166, 0, 0.418);
 
     &:hover,
     &:focus {
-      background-color: rgba(0, 113, 240, 0.7);
+      background-color: $orange-color;
+      transition: background-color 0.3s linear;
     }
   }
 }
 
 .wire {
+  position: relative;
+  z-index: 10;
+  flex-basis: 42%;
+  padding: 0 15px;
 }

@@ -33,18 +33,24 @@
             <form class="contact__form form">
               <h2 class="form__title">Message Me</h2>
               <div class="form__group">
+                <input class="form__input" type="text" id="name" placeholder=" ">
+                <label class="form__label" for="name">Name</label>
+              </div>
+              <div class="form__group">
                 <input class="form__input" type="text" id="email" placeholder=" ">
                 <label class="form__label" for="email">Email</label>
               </div>
               <div class="form__group">
-                <input class="form__input" type="text" id="password" placeholder=" ">
-                <label class="form__label" for="password">Password</label>
+                <input class="form__input" type="text" id="subject" placeholder=" ">
+                <label class="form__label" for="subject">Subject</label>
               </div>
-              <button class="form__button">Login</button>
+              <textarea class="form__textarea" name="message" id="message" cols="30" rows="5" spellcheck="false"
+                placeholder="Message" required></textarea>
+              <button class="form__button">Send Message</button>
             </form>
 
             <div class="contact__info wire">
-              <h4 class="wire__title">Contact Info</h4>
+              <h4 class="wire__title form__title">Contact Info</h4>
               <p class="wire__description">Always available for freelance work if the right project comes along, Feel
                 free to contact me!</p>
               <ul class="wire__list">
