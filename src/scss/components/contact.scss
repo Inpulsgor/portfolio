@@ -163,4 +163,16 @@ Contact
   z-index: 10;
   flex-basis: 42%;
   padding: 0 15px;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 28px;
+    color: #c9c9c9;
+  }
 }
