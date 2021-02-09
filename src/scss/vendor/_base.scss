@@ -86,13 +86,13 @@ button[disabled] {
   color: #fff;
 }
 
-input:focus:invalid {
-  border: 1px solid #ff0000;
-}
+// input:focus:invalid {
+//   border: 1px solid #ff0000;
+// }
 
-input:focus:valid {
-  border: 1px solid #008600;
-}
+// input:focus:valid {
+//   border: 1px solid #008600;
+// }
 
 // container
 .container {
@@ -138,8 +138,9 @@ input:focus:valid {
 
 .heading {
   position: relative;
-  width: 100%;
+  text-align: center;
   user-select: none;
+  width: 100%;
 }
 
 .title {
@@ -183,7 +184,7 @@ input:focus:valid {
     left: 0;
     right: 0;
     top: -40px;
-    z-index: 100;
+    z-index: 2;
     opacity: 0.05;
     color: inherit;
   }
