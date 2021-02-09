@@ -5,8 +5,11 @@ import '../../scss/components/portfolio.scss';
 const portfolioMarkup = portfolioRef => {
   const template = `
         <div class="portfolio__container container">
-        
-          <h4 class="portfolio__title title">Portfolio</h4>
+
+         <div class="portfolio__heading heading">
+            <h4 class="portfolio__title title">My works</h4>
+            <span class="title__sub">Portfolio</span>
+          </div>
 
           <div class="portfolio__categories category">
             <ul class="category__list">

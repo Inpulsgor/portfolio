@@ -4,8 +4,14 @@ import '../../scss/components/testimonials.scss';
 const testimonialsMarkup = testimonialsRef => {
   const template = `
         <div class="testimonials__container container">
-          <i class="testimonials__icon"></i>
-          <h4 class="testimonials__title title">Testimonials</h4>
+
+          <div class="testimonials__decoration"></div>
+
+          <div class="testimonials__heading heading">
+            <h4 class="testimonials__title title">Testimonials</h4>
+            <span class="title__sub">Testimony</span>
+          </div>
+
           <div class="testimonials__slider owl-carousel owl-theme owl-loaded">
             <div class="testimonials__slide slide">
               <p class="slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>

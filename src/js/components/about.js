@@ -5,6 +5,11 @@ const aboutMarkup = aboutRef => {
   const template = `
         <div class="about__container container">
 
+        <div class="about__heading heading">
+            <h4 class="about__title title">About me</h4>
+            <span class="title__sub">About</span>
+          </div>
+
           <div class="about__photo photo">
             <div class="photo__wrapper">
               <div class="photo__container">

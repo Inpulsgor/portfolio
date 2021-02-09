@@ -7,13 +7,12 @@ Testimonials
 
 .testimonials {
   position: relative;
-  padding: 100px 0;
+  padding: 100px 0 60px;
   text-align: center;
   background-image: url('../../assets/review.jpg');
   background-repeat: no-repeat;
-  background-position: 50% -25%;
+  background-position: 50% 0;
   background-attachment: fixed;
-  height: 400px;
   color: #fff;
 
   &::before {
@@ -28,11 +27,47 @@ Testimonials
     background: #000;
   }
 
+  &__decoration {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 60px;
+    width: 60px;
+    z-index: 10;
+    margin-bottom: 45px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background: transparent;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('../../assets/icons/quote.svg');
+      background-size: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 60px;
+  }
+
   &__title {
-    margin-bottom: 50px;
+    color: #fff;
     &::before {
       background: rgba(255, 255, 255, 0.1);
     }
+  }
+
+  &__slider {
+    display: block;
+    position: relative;
+    margin-bottom: 50px;
   }
 }
 

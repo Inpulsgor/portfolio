@@ -4,7 +4,12 @@ import '../../scss/components/services.scss';
 const aboutMarkup = servicesRef => {
   const template = `
         <div class="services__container container">
-          <h4 class="services__title title">Services</h4>
+
+          <div class="services__heading heading">
+            <h4 class="services__title title">My Services</h4>
+            <span class="title__sub">Services</span>
+          </div>
+
           <ul class="services__list">
             <li class="services__item service">
               <h6 class="service__title service__title_development">Development</h6>
