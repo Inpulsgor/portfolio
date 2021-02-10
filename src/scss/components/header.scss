@@ -87,6 +87,10 @@ Header
   background: transparent;
   border: none;
 
+  @include for-desktop-lg {
+    display: none;
+  }
+
   &:before {
     content: '';
     height: 2px;

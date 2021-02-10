@@ -36,7 +36,6 @@ Abilities
     color: #fff;
 
     @include for-phone-xs {
-      padding: 0 30px;
       flex-direction: column;
     }
   }

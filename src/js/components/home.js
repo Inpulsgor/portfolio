@@ -12,7 +12,7 @@ const homeMarkup = homeRef => {
           <span class="cd-words-wrapper">
             <b class="is-visible typewriter">a Developer</b>
             <b class="typewriter">a Freelancer</b>
-            <b class="typewriter">a Designer</b>
+            <b class="typewriter">a UI/UX Designer</b>
           </span>
       </h3>
     </div>

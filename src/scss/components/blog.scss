@@ -7,11 +7,15 @@ Blog
 
 .blog {
   // text-align: center;
-  padding: 100px 0;
+  // padding: 100px 0;
   background: #f5f5f5;
 
   &__container {
     padding: 0;
+
+    @include for-phone-xs {
+      padding: 0 15px;
+    }
   }
 
   &__heading {

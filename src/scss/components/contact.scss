@@ -7,7 +7,7 @@ Contact
 
 .contact {
   position: relative;
-  padding: 100px 0;
+  // padding: 100px 0;
   background-image: url('../../assets/map.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -40,6 +40,10 @@ Contact
   &__content {
     display: flex;
     width: 100%;
+
+    @include for-phone-xs {
+      flex-direction: column;
+    }
   }
 }
 
@@ -50,6 +54,11 @@ Contact
   flex-wrap: wrap;
   padding: 0 15px;
   z-index: 10;
+
+  @include for-phone-xs {
+    margin-bottom: 60px;
+    padding: 0;
+  }
 
   &__title {
     display: block;
@@ -164,6 +173,10 @@ Contact
   z-index: 10;
   flex-basis: 42%;
   padding: 0 15px 0 45px;
+
+  @include for-phone-xs {
+    padding: 0;
+  }
 
   &__title {
     margin-bottom: 20px;
