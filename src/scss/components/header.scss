@@ -14,6 +14,10 @@ Header
   background: transparent;
   z-index: 2;
 
+  @include for-phone-xs {
+    padding: 14px 20px;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -30,6 +34,10 @@ Header
 
 .nav {
   font-family: $poppins-font;
+
+  @include for-phone-xs {
+    display: none;
+  }
 
   &__list {
     display: flex;
@@ -58,5 +66,37 @@ Header
       transition: color 0.5s;
       color: $orange-color;
     }
+  }
+}
+
+.burger-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 16px;
+  width: 22px;
+  background: transparent;
+  border: none;
+
+  &:before {
+    content: '';
+    height: 2px;
+    width: 85%;
+    align-self: flex-end;
+    background-color: #f2f2f2;
+  }
+  &:after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+
+  &__line {
+    align-self: flex-end;
+    height: 2px;
+    width: 55%;
+    background-color: #f3f3f3;
   }
 }

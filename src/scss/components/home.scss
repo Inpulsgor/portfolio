@@ -27,21 +27,39 @@ Home
     background: rgba(0, 0, 0, 0.5);
   }
 
+  @include for-phone-xs {
+    background-position: 14% center;
+  }
+
   &__container {
     z-index: 5;
     text-align: center;
     width: 100%;
     color: $white-color;
+
+    // @include for-phone-xs {
+    //   padding-top: 60px;
+    // }
   }
 
   &__title {
     font-size: 40px;
     font-weight: 200;
     width: 100%;
+
+    @include for-phone-xs {
+      margin-bottom: 10px;
+    }
   }
 
   &__headline {
     font-size: 70px;
+
+    @include for-phone-xs {
+      font-size: 26px;
+      font-weight: 400;
+      white-space: nowrap;
+    }
   }
 }
 

@@ -5,14 +5,14 @@ const homeMarkup = homeRef => {
   const template = `
     <div class="home__container container">
       <h1 class="visually-hidden">Frontend Developer - Personal Portfolio</h1>
-      <h2 class="home__title">Love Coding</h2>
+      <h2 class="home__title">Dmytro Smakovskyi</h2>
 
       <h3 class="home__headline cd-headline clip">
-        <span>I am</span>
+        <span>I'm</span>
           <span class="cd-words-wrapper">
-            <b class="is-visible typewriter">Dmytro Smakovskyi</b>
-            <b class="typewriter">a Developer</b>
-            <b class="typewriter">Freelancer</b>
+            <b class="is-visible typewriter">a Developer</b>
+            <b class="typewriter">a Freelancer</b>
+            <b class="typewriter">a Designer</b>
           </span>
       </h3>
     </div>

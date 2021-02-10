@@ -5,6 +5,11 @@ const headerMarkup = headerRef => {
   const template = `
   <div class="header__container container">
     <a class="header__logo" href="#">DS</a>
+
+    <button type="button" class="header__menu burger-menu">
+        <span class="burger-menu__line"></span>
+    </button>
+
     <nav class="header__nav nav">
         <ul class="nav__list">
             <li class="nav__item">

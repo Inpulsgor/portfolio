@@ -123,6 +123,19 @@ button[disabled] {
 
 .page {
   overflow: hidden;
+
+  @include for-phone-xs {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.section {
+  padding: 100px 0;
+
+  @include for-phone-xs {
+    padding: 60px 0;
+  }
 }
 
 .visually-hidden {
@@ -187,6 +200,11 @@ button[disabled] {
     z-index: 2;
     opacity: 0.05;
     color: inherit;
+
+    @include for-phone-xs {
+      font-size: 76px;
+      top: -24px;
+    }
   }
 }
 

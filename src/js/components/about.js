@@ -19,7 +19,7 @@ const aboutMarkup = aboutRef => {
           </div>
 
           <div class="about__content content">
-            <h3 class="content__title">JS / React Developer</h3>
+            <h3 class="content__title">Web Developer</h3>
 
             <p class="content__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat dolor
               expedita totam libero ducimus et illum, numquam error, cupiditate aliquid vero consequuntur ea veritatis

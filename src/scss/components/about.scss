@@ -6,30 +6,45 @@ About
 -----------------------------------------------------------------*/
 
 .about {
-  padding: 100px 0;
-
   &__container {
     display: flex;
     flex-wrap: wrap;
+
+    @include for-phone-xs {
+      flex-direction: column;
+    }
   }
 
   &__heading {
-    // text-align: center;
     margin-bottom: 80px;
+
+    @include for-phone-xs {
+      margin-bottom: 50px;
+    }
   }
 
   &__photo {
     flex: 0 0 40%;
     max-width: 40%;
-    width: 100%;
     padding: 0 15px;
+
+    @include for-phone-xs {
+      flex: 0 0 100%;
+      max-width: 100%;
+      min-height: 232px;
+      margin-bottom: 30px;
+    }
   }
 
   &__content {
     flex: 0 0 60%;
     max-width: 60%;
-    width: 100%;
     padding: 0 15px;
+
+    @include for-phone-xs {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
   }
 }
 
