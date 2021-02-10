@@ -39,6 +39,14 @@ Header
     display: none;
   }
 
+  @include for-phone-sm-only {
+    display: none;
+  }
+
+  @include for-tablet-md-only {
+    display: none;
+  }
+
   &__list {
     display: flex;
   }

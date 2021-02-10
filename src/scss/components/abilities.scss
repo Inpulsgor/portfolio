@@ -30,22 +30,44 @@ Abilities
     flex-wrap: wrap;
     z-index: 15;
     color: #fff;
+
+    @include for-phone-xs {
+      padding: 0 30px;
+      flex-direction: column;
+    }
   }
 
   &__education {
     position: relative;
     flex: 0 0 25%;
     max-width: 25%;
+
+    @include for-phone-xs {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
   }
 
   &__experience {
     flex: 0 0 25%;
     max-width: 25%;
+
+    @include for-phone-xs {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
   }
 
   &__skills {
     flex: 0 0 50%;
     max-width: 50%;
+
+    @include for-phone-xs {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
   }
 }
 
@@ -67,6 +89,10 @@ Abilities
     &::after {
       left: 0;
       width: 55%;
+    }
+
+    @include for-phone-xs {
+      padding-bottom: 26px;
     }
   }
 
@@ -98,6 +124,10 @@ Abilities
       left: 0;
       width: 45%;
     }
+
+    @include for-phone-xs {
+      padding-bottom: 26px;
+    }
   }
 
   &__item {
@@ -112,6 +142,10 @@ Abilities
     background-image: url('../../assets/icons/skills.svg');
     background-position: left;
     background-size: 70%;
+
+    @include for-phone-xs {
+      padding-left: 20px;
+    }
   }
 
   &__title {
@@ -119,6 +153,10 @@ Abilities
     font-weight: 400;
     letter-spacing: 2px;
     margin-bottom: 40px;
+
+    @include for-phone-xs {
+      padding-bottom: 26px;
+    }
 
     &::before {
       background: rgba(255, 255, 255, 0.1);

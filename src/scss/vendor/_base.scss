@@ -188,6 +188,10 @@ button[disabled] {
     background: rgba(1, 1, 1, 0.05);
   }
 
+  @include for-phone-xs {
+    font-size: 22px;
+  }
+
   &__sub {
     font: $poppins-subtitle-font;
     text-transform: uppercase;
@@ -202,8 +206,8 @@ button[disabled] {
     color: inherit;
 
     @include for-phone-xs {
-      font-size: 76px;
-      top: -24px;
+      font-size: 54px;
+      top: -21px;
     }
   }
 }
