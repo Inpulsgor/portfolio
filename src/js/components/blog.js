@@ -13,7 +13,7 @@ const blogMarkup = blogRef => {
           <div class="blog__slider owl-carousel owl-theme">
             <div class="blog__card card">
               <header class="card__header">
-                <img src="./assets/news.jpg" alt="personal blog image">
+                <img src=${require('../../assets/news.jpg')} alt="personal blog image">
               </header>
 
               <article class="card__content">
@@ -32,7 +32,7 @@ const blogMarkup = blogRef => {
 
             <div class="blog__card card">
               <header class="card__header">
-                <img src="./assets/news.jpg" alt="personal blog image">
+                <img src=${require('../../assets/news.jpg')} alt="personal blog image">
               </header>
 
               <article class="card__content">
@@ -51,7 +51,7 @@ const blogMarkup = blogRef => {
 
             <div class="blog__card card">
               <header class="card__header">
-                <img src="./assets/news.jpg" alt="personal blog image">
+                <img src=${require('../../assets/news.jpg')} alt="personal blog image">
               </header>
 
               <article class="card__content">
