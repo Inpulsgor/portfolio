@@ -125,6 +125,7 @@ Contact
     font-size: 16px;
     letter-spacing: 1px;
     padding: 10px;
+    height: 144px;
     resize: vertical;
     flex: 0 0 100%;
     max-width: 100%;
@@ -158,11 +159,11 @@ Contact
   }
 }
 
-.wire {
+.contact-info {
   position: relative;
   z-index: 10;
   flex-basis: 42%;
-  padding: 0 15px;
+  padding: 0 15px 0 45px;
 
   &__title {
     margin-bottom: 20px;
@@ -174,5 +175,70 @@ Contact
     line-height: 1.8;
     margin-bottom: 28px;
     color: #c9c9c9;
+  }
+
+  &__list {
+  }
+}
+
+.details {
+  position: relative;
+  padding-left: 50px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #f0f0f0;
+  }
+
+  &__descr {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.95;
+
+    color: #9f9f9f;
+  }
+
+  &-name {
+    &::before {
+      background-image: url('../../assets/icons/user.svg');
+    }
+  }
+
+  &-location {
+    &::before {
+      background-image: url('../../assets/icons/location.svg');
+    }
+  }
+
+  &-phone {
+    &::before {
+      background-image: url('../../assets/icons/phone.svg');
+    }
+  }
+
+  &-email {
+    &::before {
+      background-image: url('../../assets/icons/email.svg');
+    }
   }
 }

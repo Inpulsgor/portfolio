@@ -1,7 +1,7 @@
 import refs from '../services/refs';
 import '../../scss/components/stats.scss';
 
-const aboutMarkup = statsRef => {
+const statsMarkup = statsRef => {
   const template = `
         <div class="stats__container container">
           <ul class="stats__list">
@@ -29,5 +29,5 @@ const aboutMarkup = statsRef => {
 };
 
 if (refs.stats) {
-  aboutMarkup(refs.stats);
+  statsMarkup(refs.stats);
 }

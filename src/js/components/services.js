@@ -1,7 +1,7 @@
 import refs from '../services/refs';
 import '../../scss/components/services.scss';
 
-const aboutMarkup = servicesRef => {
+const servicesMarkup = servicesRef => {
   const template = `
         <div class="services__container container">
 
@@ -53,5 +53,5 @@ const aboutMarkup = servicesRef => {
 };
 
 if (refs.services) {
-  aboutMarkup(refs.services);
+  servicesMarkup(refs.services);
 }

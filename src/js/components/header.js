@@ -4,9 +4,7 @@ import '../../scss/components/header.scss';
 const headerMarkup = headerRef => {
   const template = `
   <div class="header__container container">
-    <!-- logo -->
-    <a class="header__logo" href="#">DMs</a>
-    <!-- navbar -->
+    <a class="header__logo" href="#">DS</a>
     <nav class="header__nav nav">
         <ul class="nav__list">
             <li class="nav__item">
