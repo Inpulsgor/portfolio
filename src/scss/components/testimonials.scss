@@ -7,7 +7,6 @@ Testimonials
 
 .testimonials {
   position: relative;
-  padding: 100px 0 60px;
   background-image: url('../../assets/review.jpg');
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -24,6 +23,11 @@ Testimonials
     z-index: 1;
     opacity: 0.8;
     background: #000;
+  }
+
+  @include for-phone-xs {
+    background-size: cover;
+    padding: 80px 0;
   }
 
   &__decoration {
@@ -69,6 +73,10 @@ Testimonials
     position: relative;
     text-align: center;
     margin-bottom: 50px;
+
+    @include for-phone-xs {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -106,4 +114,8 @@ Testimonials
 .owl-theme .owl-dots .owl-dot.active span {
   background: #ffa600a6;
   transition: background 0.3s linear;
+}
+
+.testimonials .title__sub {
+  left: -10px;
 }

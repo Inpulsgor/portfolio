@@ -7,7 +7,7 @@ import 'owl.carousel';
  */
 
 $(document).ready(function () {
-  $('.js-testimonials .owl-carousel').owlCarousel({
+  $('#testimonials .owl-carousel').owlCarousel({
     items: 1,
     dots: true,
     loop: true,
@@ -42,7 +42,7 @@ $(document).ready(function () {
  */
 
 $(document).ready(function () {
-  $('.js-blog .owl-carousel').owlCarousel({
+  $('#blog .owl-carousel').owlCarousel({
     items: 3,
     dots: false,
     loop: true,

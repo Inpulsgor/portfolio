@@ -25,6 +25,10 @@ Abilities
     background: rgba(0, 0, 0, 0.7);
   }
 
+  @include for-phone-xs {
+    background-position: 30% center;
+  }
+
   &__container {
     display: flex;
     flex-wrap: wrap;
