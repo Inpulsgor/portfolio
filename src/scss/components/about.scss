@@ -12,6 +12,7 @@ About
 
     @include for-phone-xs {
       flex-direction: column;
+      justify-content: center;
     }
   }
 
@@ -29,10 +30,11 @@ About
     padding: 0 15px;
 
     @include for-phone-xs {
-      flex: 0 0 100%;
-      max-width: 100%;
-      min-height: 46vh;
-      margin-bottom: 10px;
+      display: none;
+    }
+
+    @include for-phone-sm-only {
+      display: none;
     }
   }
 
@@ -90,7 +92,47 @@ About
   }
 }
 
+.photo-mobile {
+  display: block;
+  flex: 0 0 100%;
+  min-width: 100%;
+  padding: 0;
+
+  @include for-phone-xs {
+    margin-bottom: 20px;
+  }
+
+  @include for-phone-s-custom {
+    margin-bottom: 30px;
+  }
+
+  @include for-phone-m-custom {
+    margin-bottom: 40px;
+  }
+
+  @include for-phone-l-custom {
+    margin-bottom: 50px;
+  }
+
+  @include for-tablet-md {
+    display: none;
+  }
+
+  &__container {
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
 .content {
+  @include for-phone-xs {
+    padding: 0;
+  }
+
   &__title {
     position: relative;
     display: inline-block;
@@ -149,6 +191,10 @@ About
 
     &:not(:last-child) {
       margin-right: 12px;
+
+      @include for-phone-xs {
+        margin-right: 15px;
+      }
     }
   }
 

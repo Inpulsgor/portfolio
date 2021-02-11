@@ -1,3 +1,25 @@
+/*
+* MOBILE
+*/
+
+@mixin for-phone-s-custom {
+  @media (min-width: 320px) and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin for-phone-m-custom {
+  @media (min-width: 375px) and (max-width: 425px) {
+    @content;
+  }
+}
+
+@mixin for-phone-l-custom {
+  @media (min-width: 425px) and (max-width: 575px) {
+    @content;
+  }
+}
+
 @mixin for-phone-xs {
   @media (max-width: 575px) {
     @content;
@@ -16,6 +38,10 @@
   }
 }
 
+/*
+* TABLET
+*/
+
 @mixin for-tablet-md {
   @media (min-width: 768px) {
     @content;
@@ -27,6 +53,10 @@
     @content;
   }
 }
+
+/*
+* DESKTOP
+*/
 
 @mixin for-desktop {
   @media (min-width: 992px) {
@@ -71,4 +101,3 @@
 @function rem($px) {
   @return ($px / 16) + rem;
 }
-

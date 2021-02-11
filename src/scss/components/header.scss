@@ -15,7 +15,7 @@ Header
   z-index: 2;
 
   @include for-phone-xs {
-    padding: 14px 20px;
+    padding: 0;
   }
 
   &__container {

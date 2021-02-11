@@ -1,0 +1,25 @@
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+
+  @include for-phone-xs {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  @include for-phone-sm {
+    max-width: 540px;
+  }
+
+  @include for-tablet-md {
+    max-width: 720px;
+  }
+
+  @include for-desktop-lg {
+    max-width: 960px;
+  }
+
+  @include for-desktop-xl {
+    max-width: 1140px;
+  }
+}

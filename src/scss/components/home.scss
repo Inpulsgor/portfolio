@@ -37,9 +37,9 @@ Home
     width: 100%;
     color: $white-color;
 
-    // @include for-phone-xs {
-    //   padding-top: 60px;
-    // }
+    @include for-phone-sm-only {
+      padding: 0;
+    }
   }
 
   &__title {
