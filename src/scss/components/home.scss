@@ -31,15 +31,15 @@ Home
     background-position: 14% center;
   }
 
+  @include for-phone-sm-only {
+    background-position: 0 center;
+  }
+
   &__container {
     z-index: 5;
     text-align: center;
     width: 100%;
     color: $white-color;
-
-    @include for-phone-sm-only {
-      padding: 0;
-    }
   }
 
   &__title {
@@ -50,15 +50,24 @@ Home
     @include for-phone-xs {
       margin-bottom: 10px;
     }
+
+    @include for-phone-sm-only {
+      font-size: 50px;
+      margin-bottom: 6px;
+    }
   }
 
   &__headline {
     font-size: 70px;
+    white-space: nowrap;
 
     @include for-phone-xs {
       font-size: 26px;
       font-weight: 400;
-      white-space: nowrap;
+    }
+
+    @include for-phone-sm-only {
+      font-size: 40px;
     }
   }
 }
