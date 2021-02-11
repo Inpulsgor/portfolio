@@ -31,7 +31,7 @@ const portfolioMarkup = portfolioRef => {
           <div class="portfolio__gallery gallery">
             <div class="gallery__grid grid">
               <figure class="gallery__item grid-item grid-item--1">
-                <img class="gallery__img" src="./assets/desk.jpg" alt="">
+                <img class="gallery__img" src="./assets/desk.jpg" alt="project image" width="320" height="320">
                 <div class="gallery__overlay">
                   <div class="gallery__info">
                     <h6>Design . Motion</h6>
@@ -42,7 +42,7 @@ const portfolioMarkup = portfolioRef => {
               </figure>
 
               <figure class="gallery__item grid-item grid-item--2">
-                <img class="gallery__img" src="./assets/profile.jpg" alt="">
+                <img class="gallery__img" src="./assets/profile.jpg" alt="project image" width="320" height="320">
                 <div class="gallery__overlay">
                   <div class="gallery__info">
                     <h6>Design . Motion</h6>
@@ -53,7 +53,7 @@ const portfolioMarkup = portfolioRef => {
               </figure>
 
               <figure class="gallery__item grid-item grid-item--3">
-                <img class="gallery__img" src="./assets/stats-bg.jpg" alt="">
+                <img class="gallery__img" src="./assets/stats-bg.jpg" alt="project image" width="320" height="320">
                 <div class="gallery__overlay">
                   <div class="gallery__info">
                     <h6>Design . Motion</h6>
@@ -64,7 +64,7 @@ const portfolioMarkup = portfolioRef => {
               </figure>
 
               <figure class="gallery__item grid-item grid-item--4">
-                <img class="gallery__img" src="./assets/stats-bg.jpg" alt="">
+                <img class="gallery__img" src="./assets/stats-bg.jpg" alt="project image" width="320" height="320">
                 <div class="gallery__overlay">
                   <div class="gallery__info">
                     <h6>Design . Motion</h6>
@@ -75,7 +75,7 @@ const portfolioMarkup = portfolioRef => {
               </figure>
 
               <figure class="gallery__item grid-item grid-item--5">
-                <img class="gallery__img" src="./assets/desk.jpg" alt="">
+                <img class="gallery__img" src="./assets/desk.jpg" alt="project image" width="320" height="320">
                 <div class="gallery__overlay">
                   <div class="gallery__info">
                     <h6>Design . Motion</h6>
@@ -86,7 +86,7 @@ const portfolioMarkup = portfolioRef => {
               </figure>
 
               <figure class="gallery__item grid-item grid-item--6">
-                <img class="gallery__img" src="./assets/profile.jpg" alt="">
+                <img class="gallery__img" src="./assets/profile.jpg" alt="project image" width="320" height="320">
                 <div class="gallery__overlay">
                   <div class="gallery__info">
                     <h6>Design . Motion</h6>

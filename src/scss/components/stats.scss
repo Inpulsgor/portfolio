@@ -7,7 +7,7 @@ Stats
 
 .stats {
   position: relative;
-  padding: 50px 0;
+  // padding: 50px 0;
   background-image: url('../../assets/stats-bg.jpg');
   background-attachment: fixed;
   background-position: center;
@@ -35,6 +35,10 @@ Stats
     @include for-phone-xs {
       grid-template-columns: repeat(1, minmax(0, 1fr));
     }
+
+    @include for-phone-sm-only {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
   }
 
   &__item {
@@ -55,8 +59,12 @@ Stats
       transform: translateX(-50%);
     }
 
-    @include for-phone-xs {
-      &:not(:last-child) {
+    &:not(:last-child) {
+      @include for-phone-xs {
+        margin-bottom: 50px;
+      }
+
+      @include for-phone-sm-only {
         margin-bottom: 50px;
       }
     }

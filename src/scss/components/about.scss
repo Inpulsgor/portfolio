@@ -16,14 +16,6 @@ About
     }
   }
 
-  &__heading {
-    margin-bottom: 80px;
-
-    @include for-phone-xs {
-      margin-bottom: 50px;
-    }
-  }
-
   &__photo {
     flex: 0 0 40%;
     max-width: 40%;

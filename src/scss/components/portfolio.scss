@@ -12,14 +12,6 @@ Portfolio
     padding-bottom: 80px;
   }
 
-  &__title {
-    margin-bottom: 80px;
-
-    @include for-phone-xs {
-      margin-bottom: 40px;
-    }
-  }
-
   &__categories {
     margin-bottom: 50px;
 
@@ -187,62 +179,63 @@ Portfolio
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(7, 5vw);
-  grid-gap: 20px;
-
-  @include for-phone-xs {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    grid-template-rows: repeat(1, minmax(0, 1fr));
-  }
+  display: flex;
+  flex-direction: column;
+  // display: grid;
+  // grid-template-columns: repeat(9, 1fr);
+  // grid-template-rows: repeat(7, 5vw);
+  // grid-gap: 20px;
 
   &-item {
     position: relative;
     overflow: hidden;
 
-    @include for-phone-sm {
-      &--1 {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 5;
-      }
-
-      &--2 {
-        grid-column-start: 4;
-        grid-column-end: 7;
-        grid-row-start: 1;
-        grid-row-end: 4;
-      }
-
-      &--3 {
-        grid-column-start: 7;
-        grid-column-end: 10;
-        grid-row-start: 1;
-        grid-row-end: 5;
-      }
-      &--4 {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 5;
-        grid-row-end: 8;
-      }
-
-      &--5 {
-        grid-column-start: 4;
-        grid-column-end: 7;
-        grid-row-start: 4;
-        grid-row-end: 8;
-      }
-
-      &--6 {
-        grid-column-start: 7;
-        grid-column-end: 10;
-        grid-row-start: 5;
-        grid-row-end: 8;
-      }
+    &:not(:last-of-type) {
+      margin-bottom: 15px;
     }
+
+    // @include for-phone-sm {
+    //   &--1 {
+    //     grid-column-start: 1;
+    //     grid-column-end: 4;
+    //     grid-row-start: 1;
+    //     grid-row-end: 5;
+    //   }
+
+    //   &--2 {
+    //     grid-column-start: 4;
+    //     grid-column-end: 7;
+    //     grid-row-start: 1;
+    //     grid-row-end: 4;
+    //   }
+
+    //   &--3 {
+    //     grid-column-start: 7;
+    //     grid-column-end: 10;
+    //     grid-row-start: 1;
+    //     grid-row-end: 5;
+    //   }
+    //   &--4 {
+    //     grid-column-start: 1;
+    //     grid-column-end: 4;
+    //     grid-row-start: 5;
+    //     grid-row-end: 8;
+    //   }
+
+    //   &--5 {
+    //     grid-column-start: 4;
+    //     grid-column-end: 7;
+    //     grid-row-start: 4;
+    //     grid-row-end: 8;
+    //   }
+
+    //   &--6 {
+    //     grid-column-start: 7;
+    //     grid-column-end: 10;
+    //     grid-row-start: 5;
+    //     grid-row-end: 8;
+    //   }
+    // }
   }
 }
 

@@ -28,6 +28,14 @@
   text-align: center;
   user-select: none;
   width: 100%;
+
+  @include for-phone-xs {
+    margin-bottom: 50px;
+  }
+
+  @include for-phone-sm-only {
+    margin-bottom: 60px;
+  }
 }
 
 .title {
@@ -82,6 +90,11 @@
     @include for-phone-xs {
       font-size: 54px;
       top: -21px;
+    }
+
+    @include for-phone-sm-only {
+      font-size: 89px;
+      top: -31px;
     }
   }
 }

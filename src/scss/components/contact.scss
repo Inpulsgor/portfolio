@@ -27,7 +27,6 @@ Contact
   }
 
   &__heading {
-    margin-bottom: 60px;
     position: relative;
     z-index: 10;
   }
@@ -44,6 +43,10 @@ Contact
     @include for-phone-xs {
       flex-direction: column;
     }
+
+    @include for-phone-sm-only {
+      flex-direction: column;
+    }
   }
 }
 
@@ -57,6 +60,11 @@ Contact
 
   @include for-phone-xs {
     margin-bottom: 60px;
+    padding: 0;
+  }
+
+  @include for-phone-sm-only {
+    margin-bottom: 80px;
     padding: 0;
   }
 
@@ -178,6 +186,10 @@ Contact
     padding: 0;
   }
 
+  @include for-phone-sm-only {
+    padding: 0;
+  }
+
   &__title {
     margin-bottom: 20px;
   }
@@ -188,6 +200,10 @@ Contact
     line-height: 1.8;
     margin-bottom: 28px;
     color: #c9c9c9;
+
+    @include for-phone-sm-only {
+      width: 80%;
+    }
   }
 
   &__list {
@@ -254,4 +270,8 @@ Contact
       background-image: url('../../assets/icons/email.svg');
     }
   }
+}
+
+.contact .title__sub {
+  opacity: 0.2;
 }

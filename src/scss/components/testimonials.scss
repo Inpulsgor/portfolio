@@ -56,10 +56,6 @@ Testimonials
     }
   }
 
-  &__heading {
-    margin-bottom: 60px;
-  }
-
   &__title {
     color: #fff;
     &::before {
@@ -71,11 +67,16 @@ Testimonials
     display: block;
     position: relative;
     text-align: center;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+    margin-bottom: 0;
 
-    @include for-phone-xs {
-      margin-bottom: 0;
-    }
+    // @include for-phone-xs {
+    //   margin-bottom: 0;
+    // }
+
+    // @include for-phone-sm-only {
+    //   margin-bottom: 0;
+    // }
   }
 }
 
