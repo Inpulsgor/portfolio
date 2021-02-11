@@ -35,6 +35,10 @@ Home
     background-position: 0 center;
   }
 
+  @include for-tablet-md-only {
+    background-position: 0 center;
+  }
+
   &__container {
     z-index: 5;
     text-align: center;
@@ -55,6 +59,11 @@ Home
       font-size: 50px;
       margin-bottom: 6px;
     }
+
+    @include for-tablet-md-only {
+      font-size: 62px;
+      margin-bottom: 8px;
+    }
   }
 
   &__headline {
@@ -68,6 +77,10 @@ Home
 
     @include for-phone-sm-only {
       font-size: 40px;
+    }
+
+    @include for-tablet-md-only {
+      font-size: 46px;
     }
   }
 }

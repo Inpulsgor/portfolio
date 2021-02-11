@@ -28,16 +28,13 @@ Services
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    // grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     justify-items: center;
     align-items: center;
 
-    @include for-phone-xs {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-
-    @include for-phone-sm-only {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
+    @include for-tablet-md-only {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 }
@@ -46,39 +43,58 @@ Services
   position: relative;
   text-align: center;
   padding: 110px 15px 40px;
+  border: none;
+
+  &:nth-child(odd) {
+    @include for-tablet-md-only {
+      border-right: 1px solid #eee;
+    }
+  }
 
   &:nth-child(2),
   &:nth-child(5) {
-    border-right: 1px solid #eee;
-    border-left: 1px solid #eee;
-
-    @include for-phone-xs {
-      border: none;
-    }
-
-    @include for-phone-sm-only {
-      border: none;
+    @include for-tablet-md-only {
+      // border-right: 1px solid #eee;
+      // border-left: 1px solid #eee;
     }
   }
 
   &:nth-child(1),
   &:nth-child(2),
   &:nth-child(3) {
-    border-bottom: 1px solid #eee;
-
-    @include for-phone-xs {
-      border: none;
-    }
-
-    @include for-phone-sm-only {
-      border: none;
+    @include for-tablet-md-only {
+      border-bottom: 1px solid #eee;
     }
   }
 
-  &:nth-child(2) {
-    &::before,
-    &::after {
-      @include for-desktop {
+  // &:nth-child(2) {
+  //   &::before,
+  //   &::after {
+  //     @include for-tablet-md {
+  //       content: '';
+  //       position: absolute;
+  //       width: 30px;
+  //       height: 30px;
+  //       border-radius: 50%;
+  //       bottom: -15px;
+  //       z-index: 4;
+  //       background: #fff;
+  //     }
+  //   }
+
+  //   &::before {
+  //     left: -15px;
+  //   }
+
+  //   &::after {
+  //     right: -15px;
+  //   }
+  // }
+
+  &:nth-child(2),
+  &:nth-child(4) {
+    &::before {
+      @include for-tablet-md-only {
         content: '';
         position: absolute;
         width: 30px;
@@ -93,19 +109,15 @@ Services
     &::before {
       left: -15px;
     }
-
-    &::after {
-      right: -15px;
-    }
   }
 
   &:not(:last-of-type) {
-    @include for-phone-xs {
-      border-bottom: 1px solid #eee;
-    }
+    border-bottom: 1px solid #eee;
+  }
 
-    @include for-phone-sm-only {
-      border-bottom: 1px solid #eee;
+  &:nth-child(5) {
+    @include for-tablet-md-only {
+      border-bottom: none;
     }
   }
 

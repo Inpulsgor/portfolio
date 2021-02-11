@@ -36,6 +36,10 @@
   @include for-phone-sm-only {
     margin-bottom: 60px;
   }
+
+  @include for-tablet-md-only {
+    margin-bottom: 80px;
+  }
 }
 
 .title {

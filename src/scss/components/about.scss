@@ -28,6 +28,11 @@ About
     @include for-phone-sm-only {
       display: none;
     }
+
+    @include for-tablet-md-only {
+      flex: 0 0 46%;
+      max-width: 46%;
+    }
   }
 
   &__content {
@@ -38,6 +43,11 @@ About
     @include for-phone-xs {
       flex: 0 0 100%;
       max-width: 100%;
+    }
+
+    @include for-tablet-md-only {
+      flex: 0 0 50%;
+      max-width: 50%;
     }
   }
 }
